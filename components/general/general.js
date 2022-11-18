@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import Main from './main'
-import HeaderComponents from '../header/headerComponents'
+import HeaderComponents from '../header/headerComponent'
 import FooterComponents from '../footer/footerComponents'
 import HeaderStyles from '../../styles/partial/header.module.scss'
-import Registration from '../registration/registration'
 const General = ({ children, footerid }) => {
   const displayNotification = 'none'
   const removeMainMargin = 'noMargin'
@@ -16,7 +15,6 @@ const General = ({ children, footerid }) => {
   }
   return (
     <>
-      <Registration />
       <HeaderComponents
         LinkButtonTo={`/contact`}
         LinkButtonContents={`Contact Us`}
