@@ -16,7 +16,7 @@ export default function Home () {
       </Head>
 
       <main className=''>
-       
+       Ade is cool my boy dd
       </main>
 
       <footer className=''>
