@@ -52,7 +52,7 @@ const HEAD = () => {
         href='/favico.ico'
         sizes='196x196'
       />
-      ;<link rel='icon' href='/favicon.ico' />
+      <link rel='icon' href='/favicon.ico' />
       <link
         rel='shortcut icon'
         type='image/png'
