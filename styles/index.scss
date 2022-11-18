@@ -1,0 +1,25 @@
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/classes";
+@import "modules/global";
+@import "partial/header";
+@import "partial/body";
+@import "partial/footer";
+
+
+body {
+    background: {
+        color: $defaultBackgroundColor;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+
+    body {
+        color: white;
+        background: black;
+    }
+}
