@@ -23,49 +23,46 @@ const HEAD = () => {
       <link
         rel='apple-touch-icon'
         type='image/svg'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='167x167'
       />
       <link
         rel='apple-touch-icon'
         type='image/png'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='152x152'
       />
       <link
         rel='apple-touch-icon'
         type='image/png'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='180x180'
       />
       <link
         rel='apple-touch-icon'
         type='image/png'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='120x120'
       />
-      <link
-        rel='apple-touch-icon'
-        type='image/png'
-        href='favico.ico'
-      />
+      <link rel='apple-touch-icon' type='image/png' href='/favico.ico' />
       <link rel='shortcut icon' href='/assets/img/atc_background.ico' />
       <link
         rel='shortcut icon'
         type='image/png'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='196x196'
       />
+      ;<link rel='icon' href='/favicon.ico' />
       <link
         rel='shortcut icon'
         type='image/png'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='192x192'
       />
       <link
         rel='shortcut icon'
         type='image/png'
-        href='favico.ico'
+        href='/favico.ico'
         sizes='128x128'
       />
     </Head>
