@@ -53,7 +53,10 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
           </svg>
         </a>
       </Link>
-      <span
+      <motion.span
+        initial={{ opacity: 0, y: '-10px' }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 3 }}
         className={`${nav ? HeaderStyles.none_t : ''} ${HeaderStyles.flex_c} ${
           HeaderStyles.navLinks
         }
@@ -71,13 +74,13 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
         <Link href='https://www.atc.com.ng/faq/'>
           <a>Connect</a>
         </Link>
-
         <LinkButtons
           classes={LinkButtonClasses}
           contents={LinkButtonContents}
           to={LinkButtonTo}
         />
-      </span>
+      </motion.span>
+
       <span className={`${HeaderStyles.icon}`} onClick={NavOptions}>
         <svg
           width='24'
@@ -109,7 +112,6 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
           />
         </svg>
       </span>
-      
     </header>
   )
 }
