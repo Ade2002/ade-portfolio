@@ -19,7 +19,7 @@ const HEAD = () => {
       <meta property='og:image' content='favico.ico' />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
-      <title> ATC </title>
+      <title> ADE </title>
       <link
         rel='apple-touch-icon'
         type='image/svg'

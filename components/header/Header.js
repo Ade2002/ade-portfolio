@@ -81,13 +81,13 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
           width='24'
           height='24'
           xmlns='http://www.w3.org/2000/svg'
-          fillRule='evenodd'
-          clipRule='evenodd'
+          fillRule='#FB4B04'
+          clipRule='#FB4B04'
         >
           <path
             d='M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z'
-            fill='#1040e2'
-            stroke='black'
+            fill='#FB4B04'
+            stroke='#FB4B04'
             strokeWidth='1.5'
           />
           <path d='M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z' />

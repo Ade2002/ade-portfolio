@@ -7,7 +7,7 @@ const LinkButtons = ({ classes, contents, to }) => {
       <motion.a
         initial={{ opacity: 0, y: '-10px' }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 5 }}
+        transition={{ duration: 3 }}
         className={classes}
       >
         {contents}
