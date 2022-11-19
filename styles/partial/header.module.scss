@@ -83,7 +83,7 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  color: $black;
+  color: $white;
   box-shadow: 5px 10px 18px #eeeeee00;
   transition: all 0.5s ease;
   @include flex(column, space-between, center);
@@ -133,7 +133,7 @@
         width: 100%;
         border-bottom: 1px solid #eeecec;
         line-height: 2.5;
-        color: rgba($color: $black, $alpha: 0.59);
+        color: rgba($color: $white, $alpha: 0.59);
         border-radius: 0;
         font-size: 15px;
 
@@ -143,8 +143,9 @@
           width: auto;
 
           &:not(:last-child):hover {
-            text-decoration: underline solid $deepBlue $smallpadding;
-            text-underline-offset: $smallpadding;
+            /* text-decoration: underline solid $deepBlue $smallpadding;
+            text-underline-offset: $smallpadding; */
+            background: $myOrange;
           }
         }
 
@@ -160,7 +161,7 @@
             width: 25%;
             height: 42px;
             padding: 0;
-            border: 2px solid $black;
+            border: 2px solid $white;
             justify-content: center;
             align-items: center;
           }
@@ -169,7 +170,7 @@
     }
 
     &.icon {
-      color: rgba($color: $black, $alpha: 0.59);
+      color: rgba($color: $white, $alpha: 0.59);
       opacity: 0.59;
       align-self: center;
       cursor: pointer;
