@@ -132,12 +132,14 @@
         width: 100%;
         border-bottom: 1px solid #eeecec;
         line-height: 2.5;
-        color: rgba($color: $white, $alpha: 0.59);
+        /* color: rgba($color: $white, $alpha: 0.59); */
+        color: $white;
         border-radius: 0;
         font-size: 15px;
 
         @include media($laptop) {
           padding: 0.5em;
+          padding-top: 1em;
           border-bottom: none;
           width: auto;
 
@@ -163,9 +165,11 @@
             width: 25%;
             height: 42px;
             padding: 0;
-            border: 2px solid $white;
+            border: 2px solid $myOrange;
             justify-content: center;
             align-items: center;
+            color: $white;
+            background: $myOrange;
           }
         }
       }
