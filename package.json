@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "framer-motion": "^7.6.7",
     "nanoid": "^4.0.0",
     "next": "12.3.0",
@@ -17,11 +16,6 @@
     "react-dom": "18.2.0",
     "sass": "^1.56.1",
     "wow.js": "^1.2.2"
-=======
-    "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
->>>>>>> cf28fccc378d4791d9acbd48496b47a618ed2c13
   },
   "devDependencies": {
     "eslint": "8.23.1",

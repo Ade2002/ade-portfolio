@@ -3,7 +3,7 @@ import LandingPageStyles from "../../styles/partial/home.module.scss";
 import LinkButtons from "../button/linkButton";
 import HeaderStyles from "../../styles/partial/header.module.scss";
 
-const Academy = () => {
+const Hero = () => {
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section}  gap-2`}
@@ -25,16 +25,16 @@ const Academy = () => {
       </div>
       <img
         className={`${LandingPageStyles.none_m}  wow animate__animated animate__fadeIn`}
-        src="/LaptopWomanFk.png"
-        alt="LaptopWomanFk"
+        src="/adeHero.png"
+        alt="adeHero"
       />
       <img
         className={`wow animate__animated animate__fadeIn`}
-        src="/laptopWomanMobile.png"
-        alt="LaptopWomanFk"
+        src="/adeHero.png"
+        alt="adeHero"
       />
     </section>
   );
 };
 
-export default Academy;
+export default Hero;
