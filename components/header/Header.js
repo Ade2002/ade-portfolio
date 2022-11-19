@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+
 import HeaderStyles from '../../styles/partial/header.module.scss'
 import Link from 'next/link'
 import LinkButtons from '../button/linkButton'
