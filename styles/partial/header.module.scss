@@ -138,7 +138,7 @@
         font-size: 15px;
 
         @include media($laptop) {
-          padding: 0;
+          padding: 0.5em;
           border-bottom: none;
           width: auto;
 
@@ -146,6 +146,9 @@
             /* text-decoration: underline solid $deepBlue $smallpadding;
             text-underline-offset: $smallpadding; */
             background: $myOrange;
+            transform: scale(1.1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+            transition: all 500ms ease;
           }
         }
 

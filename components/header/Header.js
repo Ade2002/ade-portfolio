@@ -59,14 +59,18 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
         `}
         >
           <Link href='/courses'>
-            <a>Home</a>
+            <a>Services</a>
           </Link>
           <Link href='https://www.atc.com.ng/contact/'>
             <a>Projects</a>
           </Link>
           <Link href='https://www.atc.com.ng/faq/'>
-            <a>Resume</a>
+            <a>Testimonials</a>
           </Link>
+          <Link href='https://www.atc.com.ng/faq/'>
+            <a>Connect</a>
+          </Link>
+
           <LinkButtons
             classes={LinkButtonClasses}
             contents={LinkButtonContents}

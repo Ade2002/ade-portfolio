@@ -17,7 +17,7 @@ const General = ({ children, footerid }) => {
     <>
       <HeaderComponents
         LinkButtonTo={`/contact`}
-        LinkButtonContents={`Contact Us`}
+        LinkButtonContents={`Resume`}
         LinkButtonClasses={`${HeaderStyles.linkButton} ${HeaderStyles.black}`}
         notify={notify}
         RemoveNotifications={RemoveNotifications}
