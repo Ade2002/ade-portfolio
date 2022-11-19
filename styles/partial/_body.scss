@@ -40,22 +40,13 @@
       }
     }
 
-    @include media {
-      flex-direction: row;
-
-      background: {
-        image: url(../../public/circleBackground.svg);
-        repeat: no-repeat;
-        position: 200% -100%;
-        size: 75% 75%;
-      }
-    }
   }
 
   &.affiliates {
     flex-wrap: wrap;
 
     &:first-child {
+
       //margin-top: 5vh;
       img {
         margin-top: 18 * $smallMargin;
@@ -82,17 +73,30 @@
   }
 
   &#acad {
-    > div {
+    >div {
+
       &.tablet,
       &.flex_r {
         width: 100%;
         justify-content: center;
         align-content: center;
 
+        @include media {
+          flex-direction: row;
+
+          background: {
+            repeat: no-repeat;
+            image: url(../../public/circleBackground.svg);
+            position: 200% -100%;
+            size: 75% 75%;
+          }
+        }
+
         &.affiliates {
           flex-wrap: wrap;
 
           &:first-child {
+
             //margin-top: 5vh;
             img {
               margin-top: 18 * $smallMargin;
@@ -205,11 +209,9 @@
 
   &#steam {
     padding: 0;
-    background: linear-gradient(
-      0deg,
-      #a5a6f6 -11.14%,
-      rgba(252, 221, 236, 0) 10.68%
-    );
+    background: linear-gradient(0deg,
+        #a5a6f6 -11.14%,
+        rgba(252, 221, 236, 0) 10.68%);
 
     @include media {
       background: {
@@ -221,7 +223,7 @@
       }
     }
 
-    > div {
+    >div {
       padding: $contentPadding;
 
       &.note {
@@ -272,7 +274,7 @@
   &#workstation {
     padding: 0;
 
-    > div {
+    >div {
       padding: $contentPadding;
       align-items: flex-start;
 
@@ -283,7 +285,7 @@
           margin-top: 10%;
         }
 
-        > div {
+        >div {
           @include media($laptop) {
             width: 45%;
           }

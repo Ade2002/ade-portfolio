@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import General from '../components/general/general'
 import Image from 'next/image'
-import Academy from '../components/Home/Hero'
+import Hero from '../components/Home/Hero'
 import Acad from '../components/Home/acad'
 import StartLearn from '../components/Home/startLearn'
 import AreYou from '../components/Home/areYou'/* 
@@ -15,7 +15,7 @@ import Community from '../components/Home/community'
 export default function Home () {
   return (
     <General>
-      <Academy />
+      <Hero />
       <Acad />
       <StartLearn />
       {/* <Courses /> */}

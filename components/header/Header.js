@@ -5,7 +5,7 @@ import Link from 'next/link'
 import LinkButtons from '../button/linkButton'
 
 const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
-  let bgHeaderWhite = '#ffffff'
+  let bgHeaderWhite = '#0E0D0D'
   let bgHeaderTransparent = '#00000000'
   let minHeight = '50'
 

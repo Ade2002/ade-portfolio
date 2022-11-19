@@ -118,12 +118,12 @@ input:-internal-autofill-selected {
 //select classes
 
 html {
-  color: #000;
+  color: $white;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #fff;
+  background-color: $defaultBackgroundColor;
   color: $black;
   background-position: center;
   width: 100%;
