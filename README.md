@@ -1,8 +1,15 @@
 # ade-portfolio
+<<<<<<< HEAD
 
 ![Ade protfolio](./public/portfolio.jpg)
 
 This is a [Portfolio](https://adeportfolio.vercel.app/) for - **Ademola Sikiru** - [Ade2002](https://github.com/ade2002)
+=======
+![hbnb_clone](./public/portfolio.jpg)
+
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+>>>>>>> cf28fccc378d4791d9acbd48496b47a618ed2c13
 
 ## Getting Started
 
@@ -31,6 +38,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+<<<<<<< HEAD
 ## Deployment
 
 This project is deployed on the following deploying Apps.
@@ -41,3 +49,10 @@ This project is deployed on the following deploying Apps.
 Sikiru Ademola <sikirusulaimon2002@gmail.com>
 
 - **Ademola Sikiru** - [Ade2002](https://github.com/ade2002)
+=======
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+>>>>>>> cf28fccc378d4791d9acbd48496b47a618ed2c13
