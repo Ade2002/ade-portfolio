@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import LandingPageStyles from '../../styles/partial/home.module.scss'
 
-const Acad = () => {
+const Services = () => {
   return (
     <section
       className={`${LandingPageStyles.flex_c} ${LandingPageStyles.section} `}
-      id={`${LandingPageStyles.acad}`}
+      id={`${LandingPageStyles.services}`}
     >
       <div
         className={`${LandingPageStyles.none} ${LandingPageStyles.tablet} ${LandingPageStyles.academy}  wow animate__animated animate__slideInUp`}
@@ -60,4 +60,4 @@ const Acad = () => {
   )
 }
 
-export default Acad
+export default Services
