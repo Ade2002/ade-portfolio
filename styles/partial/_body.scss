@@ -14,8 +14,9 @@
     background-image: url(../../public//snakeBG.png), url(../../public//springBG.png), url(../../public//kiteBG.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: fixed, fixed, fixed;
-    background-position: 0 250px, 0 80px, 600px 80px;
+    background-position: -30px 240px, 0 80px, 600px 80px;
     justify-content: space-between;
+    background-size: 50% 60%, auto, auto;
 
     .heroText {
       padding-top: $headerHeight;
@@ -58,7 +59,8 @@
         justify-content: flex-end;
         width: 100%;
         margin-top: 2em;
-        a{
+
+        a {
           margin-left: 1em;
         }
       }

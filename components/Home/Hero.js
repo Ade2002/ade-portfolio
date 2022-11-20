@@ -157,7 +157,7 @@ const Hero = () => {
             </svg>
           </a>
           <a
-            href='https://api.whatsapp.com/send?phone=+2349035807050'
+            href='https://wa.me/2349078863112?text=Hello,%20I%20would%20love%20to%20hire%20a%20developer%20.'
             target='_blank'
             rel='noreferrer'
           >
