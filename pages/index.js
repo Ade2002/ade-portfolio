@@ -9,7 +9,7 @@ import LearnWithUs from '../components/Home/learnWithUs'
 import HowItWorks from '../components/Home/howItWorks' 
 import Testimonials from '../components/Home/testimonials'
 */
-import Community from '../components/Home/community'
+import Connect from '../components/Home/Connect'
 
 export default function Home () {
   return (
@@ -22,7 +22,7 @@ export default function Home () {
       {/* <LearnWithUs /> */}
       {/* <HowItWorks /> */}
       {/* <Testimonials /> */}
-      <Community />
+      <Connect />
     </General>
   )
 }

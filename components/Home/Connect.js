@@ -3,7 +3,7 @@ import LandingPageStyles from "../../styles/partial/home.module.scss";
 import LinkButtons from "../button/linkButton";
 import HeaderStyles from "../../styles/partial/header.module.scss";
 
-const Community = () => {
+const Connect = () => {
   return (
     <section
       className={`${LandingPageStyles.flex_c} ${LandingPageStyles.section} `}
@@ -23,4 +23,4 @@ const Community = () => {
   );
 };
 
-export default Community;
+export default Connect;
