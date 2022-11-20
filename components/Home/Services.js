@@ -12,41 +12,42 @@ const Services = () => {
     >
       <div>
         <motion.span
-  initial={{ opacity: 0, y: 100 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 3 }}
->
-  ;<svg
-  width='54'
-  height='5'
-  viewBox='0 0 54 5'
-  fill='none'
-  xmlns='http://www.w3.org/2000/svg'
->
-  <line
-    x1='2.5'
-    y1='2.5'
-    x2='51.5'
-    y2='2.5'
-    stroke='#FB4B04'
-    stroke-width='5'
-    stroke-linecap='round'
-  />
-</svg>
-About Me
-</motion.span>
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3 }}
+          className={`cOrange`}
+        >
+          <svg
+            width='54'
+            height='5'
+            viewBox='0 0 54 5'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <line
+              x1='2.5'
+              y1='2.5'
+              x2='51.5'
+              y2='2.5'
+              stroke='#FB4B04'
+              stroke-width='5'
+              stroke-linecap='round'
+            />
+          </svg>{' '}
+          About Me
+        </motion.span>
 
         <motion.h2
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 2 }}
         >
           My Services.
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0 , y:200}}
+          whileInView={{ opacity: 1, y:0 }}
+          transition={{ duration: 3 }}
         >
           Hello! My name is Sikiru Ademola, and I like to produce content on the
           internet. The decision to attempt creating custom WordPress themes
@@ -54,9 +55,9 @@ About Me
           for the field.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0 , y:200}}
+          whileInView={{ opacity: 1, y:0 }}
+          transition={{ duration: 4 }}
         >
           My primary emphasis these days is creating accessible, inclusive
           products and digital experiences at African Trainovation Hub for a
@@ -64,22 +65,27 @@ About Me
           working on several projects utilizing diverse tools like as HTML, CSS,
           JAVASCRIPT, and REACT JS.
         </motion.p>
-        <LinkButtons
-          classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgBlack} wow animate__animated animate__fadeInDown`}
-          contents={`Get Started`}
-          to={`www.acadon.atc.com.ng`}
-        />
-        <LinkButtons
-          classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgBlack} wow animate__animated animate__fadeInDown`}
-          contents={`Get Started`}
-          to={`www.acadon.atc.com.ng`}
-        />
+        <div
+          className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.buttons}`}
+        >
+          <LinkButtons
+            classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgOrange} wow animate__animated animate__slideInUp`}
+            contents={`Hire me`}
+            to={`workstation`}
+          />
+          <LinkButtons
+            classes={`${HeaderStyles.linkButton} ${HeaderStyles.secondaryButton} wow animate__animated animate__slideInUp cOrange
+`}
+            contents={`Explore`}
+            to={`workstation`}
+          />
+        </div>
       </div>
       <motion.img
         initial={{ opacity: 0, y: '100px' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
-        className={` wow animate__animated animate__fadeIn`}
+        className={`wow animate__animated animate__slideInUp`}
         src='myService.png'
         alt='LaptopWomanFk'
       />

@@ -29,7 +29,7 @@
       }
 
       @include media {
-        padding-top: 0.2 * $headerHeight;
+        padding-top: 0 * $headerHeight;
         max-width: 45%;
       }
     }
@@ -118,7 +118,7 @@
       transform: scale(1.15);
       animation-duration: 4s;
       clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
-      align-self: flex-start;
+      /* align-self: flex-start; */
 
       @include media {
         transform: scale(1.1);
@@ -134,8 +134,8 @@
       background: {
         image: url(../../public/circleBackground.svg);
         repeat: no-repeat;
-        position: 200% -100%;
-        size: 75% 75%;
+        position: 400% 0%;
+        size: 90% 99%;
       }
     }
   }
