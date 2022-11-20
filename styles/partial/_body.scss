@@ -43,9 +43,9 @@
         @include media {
           transform: scale(1.1);
 
-          &:last-child {
+         /*  &:last-child {
             display: none;
-          }
+          } */
 
           width: 85%;
           min-width: 80%;
