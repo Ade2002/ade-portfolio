@@ -43,7 +43,7 @@
         @include media {
           transform: scale(1.1);
 
-         /*  &:last-child {
+          /*  &:last-child {
             display: none;
           } */
 
@@ -51,6 +51,15 @@
           min-width: 80%;
 
           transform: translate(3.125%, 0) scale(1.1);
+        }
+      }
+
+      .socials {
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 2em;
+        a{
+          margin-left: 1em;
         }
       }
     }
