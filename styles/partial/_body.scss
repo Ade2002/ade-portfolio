@@ -99,90 +99,43 @@
   }
 
   &#services {
-    >div {
+    justify-content: space-between;
+    background: #292929;
+    padding-top: $headerHeight;
 
-      &.tablet,
-      &.flex_r {
-        width: 100%;
-        justify-content: center;
-        align-content: center;
+    div {
+      padding-top: $headerHeight;
+      width: 100%;
 
-        @include media {
-          flex-direction: row;
-
-          background: {
-            repeat: no-repeat;
-            image: url(../../public/circleBackground.svg);
-            position: 200% -100%;
-            size: 75% 75%;
-          }
-        }
-
-        &.affiliates {
-          flex-wrap: wrap;
-
-          &:first-child {
-
-            //margin-top: 5vh;
-            img {
-              margin-top: 18 * $smallMargin;
-
-              @include media {
-                margin-top: 8 * $smallMargin;
-              }
-            }
-          }
-
-          img {
-            filter: opacity(0.3);
-            object-fit: scale-down;
-            object-position: left;
-            width: 25.3%;
-            margin-top: 8 * $smallMargin;
-
-            @include media {
-              margin-top: 0 * $smallMargin;
-              width: 16%;
-              object-position: center;
-            }
-          }
-        }
-
-        &.academy {
-          img {
-            width: 24%;
-            //height: 320px;
-            margin: 3 * $paddingHeight 1.5 * $smallMargin;
-            object-fit: contain;
-            border-radius: 2 * $borderRadius;
-            image-rendering: pixelated;
-
-            &:hover {
-              transform: scale(1.1);
-              /* filter: sepia(100%) hue-rotate(90deg)
-                drop-shadow(8px 8px 10px gray); */
-              filter: grayscale(100%);
-              // object-fit: cover;
-              box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-              transition: all 500ms ease;
-            }
-
-            @include media(1440px) {
-              //height: 55vh;
-            }
-          }
-        }
+      @include media {
+        padding-top: 0.2 * $headerHeight;
+        max-width: 45%;
       }
+    }
 
-      &.note {
-        @include media {
-          width: 70%;
-          text-align: center;
-        }
+    img {
+      width: 100%;
+      transform: scale(1.15);
+      animation-duration: 4s;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
+      align-self: flex-start;
 
-        @include media($laptop) {
-          width: 65%;
-        }
+      @include media {
+        transform: scale(1.1);
+        min-width: 50%;
+        width: 50%;
+        transform: translate(3.125%, 0) scale(1.1);
+      }
+    }
+
+    @include media {
+      flex-direction: row;
+
+      background: {
+        image: url(../../public/circleBackground.svg);
+        repeat: no-repeat;
+        position: 200% -100%;
+        size: 75% 75%;
       }
     }
   }

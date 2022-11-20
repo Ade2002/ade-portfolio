@@ -1,61 +1,88 @@
 /* eslint-disable @next/next/no-img-element */
 import LandingPageStyles from '../../styles/partial/home.module.scss'
+import { motion } from 'framer-motion'
+import LinkButtons from '../button/linkButton'
+import HeaderStyles from '../../styles/partial/header.module.scss'
 
 const Services = () => {
   return (
     <section
-      className={`${LandingPageStyles.flex_c} ${LandingPageStyles.section} `}
+      className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section}`}
       id={`${LandingPageStyles.services}`}
     >
-      <div
-        className={`${LandingPageStyles.none} ${LandingPageStyles.tablet} ${LandingPageStyles.academy}  wow animate__animated animate__slideInUp`}
-      >
-        <img src='../../guyWithPC.png' alt='student' />
-        <img src='../../greyPic.png' alt='student' />
-        <img src='../../uiuxguy.png' alt='student' />
-        <img src='../../ladyInPink.png' alt='student' />
-      </div>
-      <div
-        className={`${LandingPageStyles.note} ${LandingPageStyles.flex}  wow animate__animated animate__slideInUp`}
-      >
-        At ATC academy, we are here to support your dreams, and help you become
-        Masters in your chosen career path. Our instructors will train, coach
-        and mentor you.
-      </div>
-      <div
-        className={`${LandingPageStyles.flex_r} ${LandingPageStyles.affiliates}  wow animate__animated animate__slideInUp`}
-      >
-        <img src='/matplotlib.png' alt='matplotlib' />
-        <img src='../../Adobe.png' alt='Adobe' />
-        <img src='/anaconda.png' alt='anaconda' />
-        <img src='/facebook.png' alt='facebook' />
-        <img src='../../AMBIOSH.png' alt='AMBIOSH' />
-        <img
-          src='../../CreativeCloud.png'
-          style={{ transform: 'scaleY' + '(1.35)' }}
-          alt='student'
+      <div>
+        <motion.span
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 3 }}
+>
+  ;<svg
+  width='54'
+  height='5'
+  viewBox='0 0 54 5'
+  fill='none'
+  xmlns='http://www.w3.org/2000/svg'
+>
+  <line
+    x1='2.5'
+    y1='2.5'
+    x2='51.5'
+    y2='2.5'
+    stroke='#FB4B04'
+    stroke-width='5'
+    stroke-linecap='round'
+  />
+</svg>
+
+</motion.span>
+
+        <motion.h2
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3 }}
+        >
+          My Services.
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          Hello! My name is Sikiru Ademola, and I like to produce content on the
+          internet. The decision to attempt creating custom WordPress themes
+          sparked my interest in web development and led to a long-term passion
+          for the field.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          My primary emphasis these days is creating accessible, inclusive
+          products and digital experiences at African Trainovation Hub for a
+          range of customers. Fast-forward to now, and I've had the pleasure of
+          working on several projects utilizing diverse tools like as HTML, CSS,
+          JAVASCRIPT, and REACT JS.
+        </motion.p>
+        <LinkButtons
+          classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgBlack} wow animate__animated animate__fadeInDown`}
+          contents={`Get Started`}
+          to={`www.acadon.atc.com.ng`}
+        />
+        <LinkButtons
+          classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgBlack} wow animate__animated animate__fadeInDown`}
+          contents={`Get Started`}
+          to={`www.acadon.atc.com.ng`}
         />
       </div>
-      <div
-        className={`${LandingPageStyles.flex_r} ${LandingPageStyles.affiliates}  wow animate__animated animate__slideInUp`}
-      >
-        <img src='../../ibm.svg' alt='' />
-        <img src='../../microsoft.svg' alt='' />
-        <img src='../../java.svg' alt='' />
-        <img src='../../python.svg' alt='' />
-        <img src='../../google.svg' alt='' />
-        <img src='../../cisco.svg' alt='' />
-      </div>
-      <div
-        className={`${LandingPageStyles.flex_r} ${LandingPageStyles.affiliates}  wow animate__animated animate__slideInUp`}
-      >
-        <img src='../../Tableu.png' alt='' />
-        <img src='../../VScode.png' alt='' />
-        <img src='../../Rstudio.png' alt='' />
-        <img src='../../Laravel.png' alt='' />
-        <img src='../../Django.png' alt='' />
-        <img src='../../Figma.png' alt='' />
-      </div>
+      <motion.img
+        initial={{ opacity: 0, y: '100px' }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 3 }}
+        className={` wow animate__animated animate__fadeIn`}
+        src='myService.png'
+        alt='LaptopWomanFk'
+      />
     </section>
   )
 }
