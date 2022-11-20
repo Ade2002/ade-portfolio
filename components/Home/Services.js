@@ -34,7 +34,7 @@ const Services = () => {
               stroke-linecap='round'
             />
           </svg>{' '}
-          About Me
+          About Mee
         </motion.span>
 
         <motion.h2
@@ -47,7 +47,7 @@ const Services = () => {
         <motion.p
           initial={{ opacity: 0 , y:200}}
           whileInView={{ opacity: 1, y:0 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 2 }}
         >
           Hello! My name is Sikiru Ademola, and I like to produce content on the
           internet. The decision to attempt creating custom WordPress themes
@@ -57,7 +57,7 @@ const Services = () => {
         <motion.p
           initial={{ opacity: 0 , y:200}}
           whileInView={{ opacity: 1, y:0 }}
-          transition={{ duration: 4 }}
+          transition={{ duration: 2 }}
         >
           My primary emphasis these days is creating accessible, inclusive
           products and digital experiences at African Trainovation Hub for a

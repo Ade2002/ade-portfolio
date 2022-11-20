@@ -127,6 +127,22 @@ body {
   color: $white;
   background-position: center;
   width: 100%;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: $myOrange;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    transition-duration: 2s;
+  }
 }
 
 .mainMargin {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import LandingPageStyles from '../../styles/partial/home.module.scss'
 import LinkButtons from '../button/linkButton'
 import HeaderStyles from '../../styles/partial/header.module.scss'
+import { motion } from 'framer-motion'
 import FooterStyles from '../../styles/partial/footer.module.scss'
 
 const Hero = () => {
@@ -34,12 +35,20 @@ const Hero = () => {
         </span>
       </div>
       <div className={`${LandingPageStyles.heroImg}`}>
-        <img
-          className={`wow animate__animated animate__fadeIn`}
+        <motion.img
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2 }}
           src='/adeHero.png'
           alt='adeHero'
+          className={`wow animate__animated animate__fadeIn`}
         />
-        <div className={`${FooterStyles.flex_r} ${LandingPageStyles.socials}`}>
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className={`${FooterStyles.flex_r} ${LandingPageStyles.socials}`}
+        >
           <a
             href='https://www.linkedin.com/in/ade-sikiru-271886215/'
             target='_blank'
@@ -175,7 +184,7 @@ const Hero = () => {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
