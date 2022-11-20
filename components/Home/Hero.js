@@ -7,11 +7,12 @@ const Hero = () => {
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section}  gap-2`}
-      id={`${LandingPageStyles.academy}`}
+      id={`${LandingPageStyles.hero}`}
     >
       <div>
+        <span >Hello, <span className={`orange`}>I am</span></span>
         <h1>
-          Acquire the skills you need for a $100k+ tech career in just 3 months.
+          Sikiru Ademola
         </h1>
         <p>
           Acquire the 21st century skills so as to improve your relevance and
