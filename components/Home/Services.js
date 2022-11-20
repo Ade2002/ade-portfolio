@@ -33,7 +33,7 @@ const Services = () => {
     stroke-linecap='round'
   />
 </svg>
-
+About Me
 </motion.span>
 
         <motion.h2
