@@ -14,9 +14,9 @@
     background-image: url(../../public//snakeBG.png), url(../../public//springBG.png), url(../../public//kiteBG.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: fixed, fixed, fixed;
-    background-position: -30px 240px, 0 80px, 600px 80px;
+    background-position: -30px 190px, 0 80px, 550px 60px;
     justify-content: space-between;
-    background-size: 50% 60%, auto, auto;
+    background-size: 40% 65%, auto, auto;
 
     .heroText {
       padding-top: $headerHeight;
@@ -35,6 +35,7 @@
     }
 
     .heroImg {
+      padding-top: 2em;
       img {
         width: 100%;
         transform: scale(1.15);
@@ -58,7 +59,7 @@
       .socials {
         justify-content: flex-end;
         width: 100%;
-        margin-top: 2em;
+        margin-top: 0.5em;
 
         a {
           margin-left: 1em;

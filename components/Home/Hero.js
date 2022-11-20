@@ -44,9 +44,9 @@ const Hero = () => {
           className={`wow animate__animated animate__fadeIn`}
         />
         <motion.div
-          initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0, x: -1000 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 4 }}
           className={`${FooterStyles.flex_r} ${LandingPageStyles.socials}`}
         >
           <a
