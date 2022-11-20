@@ -21,11 +21,15 @@ const Hero = () => {
           quis a ut est at sit ut aenean. Tincidunt nulla nisi, velit viverra
           maecenas eu condimentum odio.
         </p>
-        <LinkButtons
-          classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgBlack} wow animate__animated animate__fadeInDown`}
-          contents={`Get Started`}
-          to={`/signIn`}
-        />
+        <span>
+          <p>
+            Exceptionally talented in UI engineering, design systems, and
+            progressive enhancement.
+          </p>
+          <p>
+            Building items for clients in many nations for more than ten years.
+          </p>
+        </span>
       </div>
       <img
         className={`${LandingPageStyles.none_m}  wow animate__animated animate__fadeIn`}
