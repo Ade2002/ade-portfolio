@@ -127,7 +127,6 @@ body {
   color: $white;
   background-position: center;
   width: 100%;
-  padding-top: 60px;
   margin-bottom: -0.8em;
 }
 
@@ -345,8 +344,6 @@ p {
   text-align: justify;
   word-break: keep-all;
   @include margin(2);
-  color: rgba($color: $black, $alpha: 0.59);
-
   @include media(425px) {
     font-size: 3.6vw;
   }
