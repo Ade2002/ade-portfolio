@@ -11,11 +11,21 @@
   }
 
   &#hero {
-    background: url(../../public//snakeBG.png) no-repeat fixed 0 250px;
+    background-image: url(../../public//snakeBG.png), url(../../public//springBG.png), url(../../public//kiteBG.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-position: 0 250px, 0 80px, 600px 80px;
+    justify-content: space-between;
 
-    div {
+    .heroText {
       padding-top: $headerHeight;
       width: 100%;
+
+      span {
+        p {
+          text-align: start;
+        }
+      }
 
       @include media {
         padding-top: 0.2 * $headerHeight;
@@ -23,22 +33,25 @@
       }
     }
 
-    img {
-      width: 100%;
-      transform: scale(1.15);
-      animation-duration: 4s;
-      clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
+    .heroImg {
+      img {
+        width: 100%;
+        transform: scale(1.15);
+        animation-duration: 4s;
+        clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
 
-      @include media {
-        transform: scale(1.1);
+        @include media {
+          transform: scale(1.1);
 
-        &:last-child {
-          display: none;
+          &:last-child {
+            display: none;
+          }
+
+          width: 85%;
+          min-width: 80%;
+
+          transform: translate(3.125%, 0) scale(1.1);
         }
-
-        min-width: 40%;
-        width: 40%;
-        transform: translate(3.125%, 0) scale(1.1);
       }
     }
 

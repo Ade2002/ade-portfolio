@@ -9,7 +9,7 @@ const Hero = () => {
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section}  gap-2`}
       id={`${LandingPageStyles.hero}`}
     >
-      <div>
+      <div className={`${LandingPageStyles.heroText}`}>
         <span>
           Hello, <span className={`cOrange`}>I am</span>
         </span>
@@ -21,26 +21,31 @@ const Hero = () => {
           quis a ut est at sit ut aenean. Tincidunt nulla nisi, velit viverra
           maecenas eu condimentum odio.
         </p>
-        <span>
-          <p>
+        <span className={`${LandingPageStyles.flex_cr}`}>
+          <p className={`cOrange`}>
             Exceptionally talented in UI engineering, design systems, and
             progressive enhancement.
           </p>
-          <p>
+          <p className={`cOrange`}>
             Building items for clients in many nations for more than ten years.
           </p>
         </span>
       </div>
-      <img
-        className={`${LandingPageStyles.none_m}  wow animate__animated animate__fadeIn`}
-        src='/adeHero.png'
-        alt='adeHero'
-      />
-      <img
-        className={`wow animate__animated animate__fadeIn`}
-        src='/adeHero.png'
-        alt='adeHero'
-      />
+      <div className={`${LandingPageStyles.heroImg}`}>
+        <img
+          className={`${LandingPageStyles.none_m}  wow animate__animated animate__fadeIn`}
+          src='/adeHero.png'
+          alt='adeHero'
+        />
+        <img
+          className={`wow animate__animated animate__fadeIn`}
+          src='/adeHero.png'
+          alt='adeHero'
+        />
+        <span>
+          
+        </span>
+      </div>
     </section>
   )
 }
