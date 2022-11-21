@@ -2,10 +2,7 @@
 
 ![Ade protfolio](./public/portfolio.jpg)
 
-This is a [Portfolio](https://adeportfolio.vercel.app/) for - **Ademola Sikiru** - [Ade2002](https://github.com/ade2002)
-=======
-![hbnb_clone](./public/portfolio.jpg)
-
+This is a [Portfolio](https://adeportfolio.vercel.app/) for - **Ademola Sikiru**  - [Ade2002](https://github.com/ade2002) ![hbnb_clone](./public/portfolio.jpg)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
