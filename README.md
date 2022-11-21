@@ -1,5 +1,4 @@
 # ade-portfolio
-<<<<<<< HEAD
 
 ![Ade protfolio](./public/portfolio.jpg)
 
@@ -9,7 +8,6 @@ This is a [Portfolio](https://adeportfolio.vercel.app/) for - **Ademola Sikiru**
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
->>>>>>> cf28fccc378d4791d9acbd48496b47a618ed2c13
 
 ## Getting Started
 
