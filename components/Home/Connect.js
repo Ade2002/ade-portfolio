@@ -4,7 +4,7 @@ import LinkButtons from '../button/linkButton'
 import HeaderStyles from '../../styles/partial/header.module.scss'
 import { motion } from 'framer-motion'
 import FooterStyles from '../../styles/partial/footer.module.scss'
-
+import Fieldset from './Form/fieldset'
 const Connect = () => {
   return (
     <section
@@ -179,16 +179,29 @@ const Connect = () => {
       >
         <span>
           <Fieldset
-            labelContent='First name'
-            LabelFor='first_name'
+            labelContent='Your Name'
+            LabelFor='full_name'
             inputType='text'
-            inputName='first_name'
-            inputPlaceholder='Enter your First name'
-            inputId='first_name'
-            value={values.first_name}
-            onchange={handleChange}
+            inputName='full_name'
+            inputPlaceholder='Enter your Full name'
+            inputId='full_name'
+            /* value={values.full_name} */
+            /* onchange={handleChange} */
           />
-          {errors.first_name && <i>{errors.first_name}</i>}
+          {/* errors.full_name && */ <i>{/* errors. */ 'Full name*'}</i>}
+        </span>
+        <span>
+          <Fieldset
+            labelContent='Your Email'
+            LabelFor='email'
+            inputType='email'
+            inputName='email'
+            inputPlaceholder='Enter your Email Address'
+            inputId='email'
+            /* value={values.email} */
+            /* onchange={handleChange} */
+          />
+          {/* errors.email && */ <i>{/* errors. */ 'Full name*'}</i>}
         </span>
       </motion.form>
     </section>
