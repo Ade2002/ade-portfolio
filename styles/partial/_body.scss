@@ -145,6 +145,10 @@
   &#connect {
     padding-top: 0 * $paddingHeight;
 
+    >div {
+      align-self: flex-start;
+    }
+
     .socials {
       justify-content: flex-start;
       width: 100%;
