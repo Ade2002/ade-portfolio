@@ -61,7 +61,7 @@ const Services = () => {
         >
           My primary emphasis these days is creating accessible, inclusive
           products and digital experiences at African Trainovation Hub for a
-          range of customers. Fast-forward to now, and I've had the pleasure of
+          range of customers. Fast-forward to now, and I&apos;ve had the pleasure of
           working on several projects utilizing diverse tools like as HTML, CSS,
           JAVASCRIPT, and REACT JS.
         </motion.p>
