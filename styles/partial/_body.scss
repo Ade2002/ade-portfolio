@@ -164,12 +164,10 @@
       width: 90%;
 
       button {
-        background: #11088A;
-        border-color: #11088A;
+        background: $myOrange;
+        border-color: $myOrange;
         margin: 2em 0 0 0;
         justify-self: start;
-        grid-template-columns: 48% 48%;
-        grid-column: 1/ span 1;
         width: 120px;
       }
 

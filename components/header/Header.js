@@ -107,7 +107,7 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
         >
           <path
             d='M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z'
-            stroke='black'
+            stroke='#fb4b04'
             strokeWidth='1.5'
           />
         </svg>
