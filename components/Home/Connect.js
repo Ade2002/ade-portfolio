@@ -175,8 +175,22 @@ const Connect = () => {
         initial={{ opacity: 0, y: '100px' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
-        className={`wow animate__animated animate__slideInUp`}>
-        </motion.form>
+        className={`wow animate__animated animate__slideInUp`}
+      >
+        <span>
+          <Fieldset
+            labelContent='First name'
+            LabelFor='first_name'
+            inputType='text'
+            inputName='first_name'
+            inputPlaceholder='Enter your First name'
+            inputId='first_name'
+            value={values.first_name}
+            onchange={handleChange}
+          />
+          {errors.first_name && <i>{errors.first_name}</i>}
+        </span>
+      </motion.form>
     </section>
   )
 }
