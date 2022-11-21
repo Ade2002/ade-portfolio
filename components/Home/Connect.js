@@ -9,7 +9,7 @@ const Connect = () => {
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section} `}
-      id={`${LandingPageStyles.community}`}
+      id={`${LandingPageStyles.connect}`}
     >
       <div>
         <motion.h2
