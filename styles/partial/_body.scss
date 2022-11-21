@@ -189,7 +189,7 @@
         }
 
         fieldset {
-          border: 1px solid #36488C;
+          border: 1px solid $myOrange;
           border-radius: 4px;
           height: 3.65em;
           padding: 0 0 2em 1em;
@@ -197,7 +197,7 @@
           margin-bottom: 0.5em;
 
           label {
-            color: #555555;
+            color: $myOrange;
             font-size: 14px;
           }
 
@@ -209,7 +209,7 @@
           input,
           select {
             width: 100%;
-            background-color: #fff;
+            background-color: inherit;
             color: #857C7C;
             font-size: 12px;
 
@@ -217,7 +217,7 @@
               appearance: menulist-button;
               background-image: none !important;
               background-color: transparent !important;
-              color: fieldtext !important;
+              color: $myOrange !important;
             }
           }
 
@@ -226,30 +226,20 @@
           }
         }
 
-        &:nth-child(9),
-        h4 {
-          grid-column: 1/ span 2;
-        }
-
-        &:nth-child(10) {
-          grid-column: 1/ span 2;
+        &:nth-child(4) {
           height: 7em;
 
           fieldset {
             height: 5em;
           }
         }
+
       }
 
       @include media {
-        /*  display: grid;
- grid-template-columns: 48% 48%; */
-        justify-content: space-between;
-        align-self: flex-start;
         padding-bottom: 0;
         margin-bottom: 0;
         width: 45%;
-
       }
     }
 
