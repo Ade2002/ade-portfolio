@@ -19,8 +19,6 @@
     padding-right: 7vw;
   }
 
-  background-color: $black;
-
   a,
   div {
     font-size: 1em;
@@ -84,7 +82,7 @@
     .follow {
       align-items: center;
       a {
-        margin: 0 3 * $smallpadding;
+        margin: 0.5em 3 * $smallpadding;
         transform: scale(1.2);
         text-align: center;
 
