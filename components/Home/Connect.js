@@ -217,6 +217,7 @@ const Connect = () => {
           />
           {/* errors.projectDetails && */ <i>{/* errors. */ 'Full name*'}</i>}
         </span>
+        <button type='submit'>Connect</button>
       </motion.form>
     </section>
   )
