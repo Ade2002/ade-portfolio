@@ -1,5 +1,5 @@
 import HEAD from "./head";
-import Header from "./header";
+import Header from "./Header";
 
 const HeaderComponents = ({
   LinkButtonTo,
