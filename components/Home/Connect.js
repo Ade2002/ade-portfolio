@@ -171,14 +171,12 @@ const Connect = () => {
           </a>
         </motion.div>
       </div>
-      <motion.img
+      <motion.form
         initial={{ opacity: 0, y: '100px' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
-        className={`wow animate__animated animate__slideInUp`}
-        src='myService.png'
-        alt='LaptopWomanFk'
-      />
+        className={`wow animate__animated animate__slideInUp`}>
+        </motion.form>
     </section>
   )
 }

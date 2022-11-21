@@ -159,18 +159,6 @@
       }
     }
 
-    * {
-      color: #fff;
-    }
-
-    a {
-      border: none;
-
-      @include media {
-        align-self: flex-start;
-      }
-    }
-
     img {
       transform: translate(-3.125%, 0) scale(1.135);
 
@@ -188,12 +176,10 @@
     }
 
     @include media {
-      margin-top: 8 * $paddingHeight;
       align-items: center;
       justify-content: space-between;
-
       div {
-        max-width: 50%;
+        max-width: 40%;
       }
     }
   }
