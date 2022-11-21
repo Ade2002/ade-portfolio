@@ -30,8 +30,8 @@ const Services = () => {
               x2='51.5'
               y2='2.5'
               stroke='#FB4B04'
-              stroke-width='5'
-              stroke-linecap='round'
+              strokeWidth='5'
+              strokeLinecap='round'
             />
           </svg>{' '}
           About Me
@@ -45,8 +45,8 @@ const Services = () => {
           My Services.
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0 , y:200}}
-          whileInView={{ opacity: 1, y:0 }}
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
         >
           Hello! My name is Sikiru Ademola, and I like to produce content on the
@@ -55,15 +55,15 @@ const Services = () => {
           for the field.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0 , y:200}}
-          whileInView={{ opacity: 1, y:0 }}
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
         >
           My primary emphasis these days is creating accessible, inclusive
           products and digital experiences at African Trainovation Hub for a
-          range of customers. Fast-forward to now, and I&apos;ve had the pleasure of
-          working on several projects utilizing diverse tools like as HTML, CSS,
-          JAVASCRIPT, and REACT JS.
+          range of customers. Fast-forward to now, and I&apos;ve had the
+          pleasure of working on several projects utilizing diverse tools like
+          as HTML, CSS, JAVASCRIPT, and REACT JS.
         </motion.p>
         <div
           className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.buttons}`}
