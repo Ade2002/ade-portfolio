@@ -3,7 +3,6 @@
 
 
 "@babel/runtime-corejs3@^7.10.2":
-<<<<<<< HEAD
   "integrity" "sha512-j2vJGnkopRzH+ykJ8h68wrHnEUmtK//E723jjixiAl/PPf6FhqY/vYRcMVlNydRKQjQsTsYEjpx+DZMIvnGk/g=="
   "resolved" "https://registry.npmjs.org/@babel/runtime-corejs3/-/runtime-corejs3-7.19.1.tgz"
   "version" "7.19.1"
@@ -181,7 +180,6 @@
   "integrity" "sha512-01VzI/ipYKuaG5PkE5+qyJ6m02fVALmMPY3Qq5BHflDx3y4VobbLdHQkSMg9VPRS4KdNt4oYTMaomFoHonBGAw=="
   "resolved" "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.37.0.tgz"
   "version" "5.37.0"
-=======
   version "7.19.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.19.1.tgz#f0cbbe7edda7c4109cd253bb1dee99aba4594ad9"
   integrity sha512-j2vJGnkopRzH+ykJ8h68wrHnEUmtK//E723jjixiAl/PPf6FhqY/vYRcMVlNydRKQjQsTsYEjpx+DZMIvnGk/g==
@@ -354,7 +352,6 @@
   version "5.37.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.37.0.tgz#c382077973f3a4ede7453fb14cadcad3970cbf3b"
   integrity sha512-01VzI/ipYKuaG5PkE5+qyJ6m02fVALmMPY3Qq5BHflDx3y4VobbLdHQkSMg9VPRS4KdNt4oYTMaomFoHonBGAw==
->>>>>>> cf28fccc378d4791d9acbd48496b47a618ed2c13
   dependencies:
     "@typescript-eslint/scope-manager" "5.37.0"
     "@typescript-eslint/types" "5.37.0"
