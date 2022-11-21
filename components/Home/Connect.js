@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const Connect = () => {
   return (
     <section
-      className={`${LandingPageStyles.flex_c} ${LandingPageStyles.section} `}
+      className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section} `}
       id={`${LandingPageStyles.community}`}
     >
       <div>
@@ -27,21 +27,6 @@ const Connect = () => {
           The ants enjoyed the barbecue more than the family. Everyone was busy,
           so I went to the movie alone.
         </motion.p>
-        <div
-          className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.buttons}`}
-        >
-          <LinkButtons
-            classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgOrange} wow animate__animated animate__slideInUp`}
-            contents={`Hire me`}
-            to={`workstation`}
-          />
-          <LinkButtons
-            classes={`${HeaderStyles.linkButton} ${HeaderStyles.secondaryButton} wow animate__animated animate__slideInUp cOrange
-`}
-            contents={`Explore`}
-            to={`workstation`}
-          />
-        </div>
       </div>
       <motion.img
         initial={{ opacity: 0, y: '100px' }}
