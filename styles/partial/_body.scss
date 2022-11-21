@@ -36,6 +36,7 @@
 
     .heroImg {
       padding-top: 2em;
+
       img {
         width: 100%;
         transform: scale(1.15);
@@ -141,9 +142,22 @@
     }
   }
 
-  &#qhse {
-    background-color: $deepBlue;
-    padding-top: 4 * $paddingHeight;
+  &#connect {
+    padding-top: 0 * $paddingHeight;
+
+    .socials {
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 2em;
+
+      a {
+        margin-left: 1em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
 
     * {
       color: #fff;
@@ -151,9 +165,6 @@
 
     a {
       border: none;
-      background-color: #0135d6;
-      box-shadow: 2px 2px #000;
-      box-shadow: 0 0 3px rgba(60, 72, 88, 15);
 
       @include media {
         align-self: flex-start;

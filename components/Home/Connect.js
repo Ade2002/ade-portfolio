@@ -29,7 +29,7 @@ const Connect = () => {
           so I went to the movie alone.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, x: -500 }}
+          initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 4 }}
           className={`${FooterStyles.flex_r} ${LandingPageStyles.socials}`}
