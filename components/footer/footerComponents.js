@@ -1,54 +1,12 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FooterLinks } from './footerLinks'
 import FooterStyles from '../../styles/partial/footer.module.scss'
 const Footer = ({ footerid }) => {
-  const [open, setOpen] = useState()
   const date = new Date()
   const year = date.getFullYear()
-  const showNav = index =>
-    setOpen(prevState => (index === prevState ? -1 : index))
 
-  const FooterNavs = ({ FN, index, showNav, open }) => (
-    <div className={`${FooterStyles.flex_c} ${FooterStyles.w100} cOrange `}>
-      <span onClick={() => showNav(index)}>
-        <b>{FN.title}</b>
-        <svg
-          aria-hidden='true'
-          focusable='false'
-          dataprefix='fas'
-          dataicon='chevron-down'
-          className='svg-inline--fa fa-chevron-down fa-w-14'
-          role='img'
-          xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 448 512'
-        >
-          <path
-            fill='white'
-            d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'
-          ></path>
-        </svg>
-      </span>
-      <hr />
-      <nav className={`${index !== open ? FooterStyles.none_m : ''} cOrange `}>
-        {FN.links.map((FNL, index) => (
-          <Link href={FNL.to} {...{ FNL, index }} key={index}>
-            <a className={FooterStyles.block}>{FNL.label}</a>
-          </Link>
-        ))}
-      </nav>
-    </div>
-  )
   return (
     <footer className={`${FooterStyles.footer} cOrange `} id={footerid}>
-      <section
-        data-wow-offset='50'
-        className={`${FooterStyles.flex_cr} ${FooterStyles.links} ${FooterStyles.socials} wow animate__animated animate__slideInUp`}
-      >
-        {FooterLinks.map((FN, FNT, index) => (
-          <FooterNavs {...{ FN, FNT, index, open, showNav }} key={FN.id} />
-        ))}
-      </section>
       <div>
         <hr />
       </div>
@@ -72,7 +30,7 @@ const Footer = ({ footerid }) => {
           </a>
         </Link>
         <div
-          className={`${FooterStyles.flex_r} ${FooterStyles.follow} cOrange `}
+          className={`${FooterStyles.flex_cr} ${FooterStyles.follow} cOrange `}
         >
           <a
             href='https://twitter.com/atchub_'
@@ -130,7 +88,7 @@ const Footer = ({ footerid }) => {
               fill='#FB4B04'
             />
           </svg>
-          <p>Ademola Sikiru {year}</p>
+          <p className={`cOrange`}>Ademola Sikiru {year}</p>
         </div>
       </section>
     </footer>
