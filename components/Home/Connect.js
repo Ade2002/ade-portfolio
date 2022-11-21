@@ -177,6 +177,7 @@ const Connect = () => {
         transition={{ duration: 3 }}
         className={`wow animate__animated animate__slideInUp`}
       >
+        <p>Lets create something amazing together. </p>
         <span>
           <Fieldset
             labelContent='Your Name'
@@ -201,7 +202,20 @@ const Connect = () => {
             /* value={values.email} */
             /* onchange={handleChange} */
           />
-          {/* errors.email && */ <i>{/* errors. */ 'Full name*'}</i>}
+          {/* errors.email && */ <i>{/* errors. */ 'Email*'}</i>}
+        </span>
+        <span>
+          <Fieldset
+            labelContent='Project Details'
+            LabelFor='projectDetails'
+            inputType='projectDetails'
+            inputName='projectDetails'
+            inputPlaceholder='Details...'
+            inputId='projectDetails'
+            /* value={values.projectDetails} */
+            /* onchange={handleChange} */
+          />
+          {/* errors.projectDetails && */ <i>{/* errors. */ 'Full name*'}</i>}
         </span>
       </motion.form>
     </section>

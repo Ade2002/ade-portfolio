@@ -159,25 +159,104 @@
       }
     }
 
-    img {
-      transform: translate(-3.125%, 0) scale(1.135);
+    form {
+      margin-top: 0;
+      width: 90%;
 
-      @include media {
-        transform: translate(3.5%, -2.5%);
-        min-width: 50%;
-        width: 50%;
-        margin-right: 0;
+      button {
+        background: #11088A;
+        border-color: #11088A;
+        margin: 2em 0 0 0;
+        justify-self: start;
+        grid-template-columns: 48% 48%;
+        grid-column: 1/ span 1;
+        width: 120px;
       }
 
-      @include media(1200px) {
-        min-width: 45%;
+      h5 {
+        padding: 0;
+        margin: 2em 0;
+        grid-column: 1/ span 2;
+      }
+
+      span {
+        margin-bottom: 0.5em;
+
+        i {
+          font-size: 10px;
+          font-style: normal;
+          color: red;
+        }
+
+        fieldset {
+          border: 1px solid #36488C;
+          border-radius: 4px;
+          height: 3.65em;
+          padding: 0 0 2em 1em;
+          width: 100%;
+          margin-bottom: 0.5em;
+
+          label {
+            color: #555555;
+            font-size: 14px;
+          }
+
+          legend {
+            padding-bottom: 0.2em;
+
+          }
+
+          input,
+          select {
+            width: 100%;
+            background-color: #fff;
+            color: #857C7C;
+            font-size: 12px;
+
+            &:-internal-autofill-selected {
+              appearance: menulist-button;
+              background-image: none !important;
+              background-color: transparent !important;
+              color: fieldtext !important;
+            }
+          }
+
+          div {
+            margin: 0;
+          }
+        }
+
+        &:nth-child(9),
+        h4 {
+          grid-column: 1/ span 2;
+        }
+
+        &:nth-child(10) {
+          grid-column: 1/ span 2;
+          height: 7em;
+
+          fieldset {
+            height: 5em;
+          }
+        }
+      }
+
+      @include media {
+        /*  display: grid;
+ grid-template-columns: 48% 48%; */
+        justify-content: space-between;
+        align-self: flex-start;
+        padding-bottom: 0;
+        margin-bottom: 0;
         width: 45%;
+
       }
     }
 
     @include media {
       align-items: center;
       justify-content: space-between;
+
       div {
         max-width: 40%;
       }
