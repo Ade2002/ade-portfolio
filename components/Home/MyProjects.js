@@ -71,13 +71,13 @@ const Services = () => {
           <LinkButtons
             classes={`${HeaderStyles.linkButton} ${HeaderStyles.bgOrange} wow animate__animated animate__slideInUp`}
             contents={`Hire me`}
-            to={`workstation`}
+            to={`connect`}
           />
           <LinkButtons
             classes={`${HeaderStyles.linkButton} ${HeaderStyles.secondaryButton} wow animate__animated animate__slideInUp cOrange
 `}
             contents={`Explore`}
-            to={`workstation`}
+            to={`connect`}
           />
         </div>
       </div>

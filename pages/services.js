@@ -1,10 +1,10 @@
 import React from "react";
 import General from '../components/general/general'
-import Acad from "../components/Home/MyProjects";
+import Services from "../components/Home/MyProjects";
 const services = () => {
   return (
     <General>
-      <Acad />
+      <Services />
     </General>
   );
 };
