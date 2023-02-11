@@ -14,15 +14,15 @@ import Connect from '../components/Home/Connect'
 export default function Home () {
   return (
     <General>
-      <Hero />
+      <Hero />{/* 
       <Acad />
-      <StartLearn />
+      <StartLearn /> */}
+      {/* <AreYou />
+      <Connect /> */}
       {/* <Courses /> */}
-      <AreYou />
+      {/* <Testimonials /> */}
       {/* <LearnWithUs /> */}
       {/* <HowItWorks /> */}
-      {/* <Testimonials /> */}
-      <Connect />
     </General>
   )
 }

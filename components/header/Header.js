@@ -57,9 +57,8 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
         initial={{ opacity: 0, y: '-10px' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
-        className={`${nav ? HeaderStyles.none_t : ''} ${HeaderStyles.flex_c} ${
-          HeaderStyles.navLinks
-        }
+        className={`${nav ? HeaderStyles.none_t : ''} ${HeaderStyles.flex_c} ${HeaderStyles.navLinks
+          }
         `}
       >
         <Link href='/courses'>
@@ -80,22 +79,9 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
           to={LinkButtonTo}
         />
       </motion.span>
-
       <span className={`${HeaderStyles.icon}`} onClick={NavOptions}>
-        <svg
-          width='24'
-          height='24'
-          xmlns='http://www.w3.org/2000/svg'
-          fillRule='#FB4B04'
-          clipRule='#FB4B04'
-        >
-          <path
-            d='M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z'
-            fill='#FB4B04'
-            stroke='#FB4B04'
-            strokeWidth='1.5'
-          />
-          <path d='M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z' />
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+          <path d="M5.67188 25.2656H27.3281M5.67188 17.0156H27.3281M5.67188 8.76562H27.3281" stroke="#FB4B04" stroke-width="3.09375" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
         <svg
           className='none'
