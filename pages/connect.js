@@ -5,7 +5,7 @@ import ConnectWith from "../components/Home/Connect";
 export default function Connect() {
   return (
     <General>
-      <Connect />
+      <ConnectWith />
     </General>
   );
 }

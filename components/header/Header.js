@@ -81,7 +81,7 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
       </motion.span>
       <span className={`${HeaderStyles.icon}`} onClick={NavOptions}>
         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-          <path d="M5.67188 25.2656H27.3281M5.67188 17.0156H27.3281M5.67188 8.76562H27.3281" stroke="#FB4B04" stroke-width="3.09375" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5.67188 25.2656H27.3281M5.67188 17.0156H27.3281M5.67188 8.76562H27.3281" stroke="#FB4B04" stroke-width="3.09375" stroke-linecap="round" strokeLinejoin="round" />
         </svg>
         <svg
           className='none'
