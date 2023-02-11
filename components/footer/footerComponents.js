@@ -72,14 +72,16 @@ const Footer = ({ footerid }) => {
               Connect
             </a>
           </Link>
-          <a
-            href="https://www.instagram.com/atchub_/"
-            target="_blank"
-            rel="noreferrer"
-            className={`cOrange`}
-          >
-            Resume
-          </a>
+          <Link href="/resume">
+            <a
+              href="https://www.instagram.com/atchub_/"
+              target="_blank"
+              rel="noreferrer"
+              className={`cOrange`}
+            >
+              Resume
+            </a>
+          </Link>
         </div>
         <div
           className={`${FooterStyles.allRightReserved} ${FooterStyles.flex_r} cOrange `}
