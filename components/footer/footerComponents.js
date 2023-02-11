@@ -34,9 +34,6 @@ const Footer = ({ footerid }) => {
         >
           <Link href="/services">
             <a
-              href="https://twitter.com/atchub_"
-              target="_blank"
-              rel="noreferrer"
               className={`cOrange`}
             >
               Services
@@ -44,9 +41,6 @@ const Footer = ({ footerid }) => {
           </Link>
           <Link href="/projects">
             <a
-              href="https://api.whatsapp.com/send?phone=+2349035807050"
-              target="_blank"
-              rel="noreferrer"
               className={`cOrange`}
             >
               Projects
@@ -54,9 +48,6 @@ const Footer = ({ footerid }) => {
           </Link>
           <Link href="/testimonials">
             <a
-              href="https://www.facebook.com/ATChubb"
-              target="_blank"
-              rel="noreferrer"
               className={`cOrange`}
             >
               Testimonials
@@ -64,19 +55,13 @@ const Footer = ({ footerid }) => {
           </Link>
           <Link href="/connect">
             <a
-              href="https://www.linkedin.com/company/africa-trainovation-consulting/"
-              target="_blank"
-              rel="noreferrer"
-              className={`cOrange`}
+            className={`cOrange`}
             >
               Connect
             </a>
           </Link>
           <Link href="/resume">
             <a
-              href="https://www.instagram.com/atchub_/"
-              target="_blank"
-              rel="noreferrer"
               className={`cOrange`}
             >
               Resume
