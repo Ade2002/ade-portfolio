@@ -11,8 +11,7 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
   let bgHeaderTransparent = '#00000000'
   let minHeight = '50'
 
-  const close = true
-  const [nav, setNav] = useState(close)
+  const [nav, setNav] = useState(false);
   const NavOptions = e => {
     e.stopPropagation()
     setNav(!nav)
@@ -53,11 +52,11 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
           </svg>
         </a>
       </Link>
-      <motion.span
+      <motion.nav
         initial={{ opacity: 0, y: '-10px' }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
-        className={`${nav ? HeaderStyles.none_t : ''} ${HeaderStyles.flex_c} ${HeaderStyles.navLinks
+        className={`${nav ? '' : HeaderStyles.none_t} ${HeaderStyles.flex_c} ${HeaderStyles.navLinks
           }
         `}
       >
@@ -78,25 +77,38 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
           contents={LinkButtonContents}
           to={LinkButtonTo}
         />
-      </motion.span>
-      <span className={`${HeaderStyles.icon}`} onClick={NavOptions}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
-          <path d="M5.67188 25.2656H27.3281M5.67188 17.0156H27.3281M5.67188 8.76562H27.3281" stroke="#FB4B04" strokeWidth="3.09375" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+      </motion.nav>
+      <span className={HeaderStyles.icon} onClick={NavOptions}>
         <svg
-          className='none'
-          width='24'
-          height='24'
-          xmlns='http://www.w3.org/2000/svg'
-          fillRule='evenodd'
-          clipRule='evenodd'
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          className={`${!nav ? "" : "none"} bar`}
         >
           <path
-            d='M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z'
-            stroke='#fb4b04'
-            strokeWidth='1.5'
-          />
+            d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"
+            fill="#fb4b04"
+            stroke="#fb4b04"
+            stroke-width="1.5"
+          ></path>
+          <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"></path>
         </svg>
+        <svg
+            className={`${nav ? "" : "none"} bar`}
+            width='24'
+            height='24'
+            xmlns='http://www.w3.org/2000/svg'
+            fillRule='evenodd'
+            clipRule='evenodd'
+          >
+            <path
+              d='M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z'
+              stroke='#fb4b04'
+              strokeWidth='1.5'
+            />
+          </svg>
       </span>
     </header>
   )

@@ -321,6 +321,13 @@
   }
 }
 
+.bar {
+  display: flex;
+  @include media($laptop) {
+    display: none;
+  }
+}
+
 .none {
   display: none;
 

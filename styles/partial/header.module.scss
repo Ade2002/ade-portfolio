@@ -57,18 +57,10 @@
 
 @media only screen and (min-width:540px) {
   #notification * {
-    /* font-size:12px;*/
     min-width: 11vw;
   }
 }
 
-/* 
-@media only screen and (min-width:768px) {
-  #notification * {
-    font-size:16px;
-  }
-}
- */
 @media only screen and (min-width:1024px) {
   #notification * {
     font-size: 20px;
@@ -76,7 +68,7 @@
 }
 
 .header {
-  height: auto;
+  height: $headerHeight;
   width: 100%;
   position: fixed;
   top: 0;
@@ -105,7 +97,7 @@
   }
 
 
-  span {
+  span, nav {
     &.navLinks {
       position: absolute;
       left: 0;
@@ -144,8 +136,6 @@
           width: auto;
 
           &:not(:last-child):hover {
-            /* text-decoration: underline solid $deepBlue $smallpadding;
-            text-underline-offset: $smallpadding; */
             background: $myOrange;
             transform: scale(1.1);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
