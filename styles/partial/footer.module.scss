@@ -4,9 +4,8 @@
 /* @import "./footerWithIsh"; */
 
 .footer {
-  padding-top: $paddingHeight;
   padding-bottom: $paddingHeight;
-  padding: 3 * $paddingHeight 0 $paddingHeight;
+  padding: 0 * $paddingHeight 0 $paddingHeight;
 
   .block {
     display: block;

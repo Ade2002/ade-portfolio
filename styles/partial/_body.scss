@@ -1,5 +1,5 @@
 .section {
-  padding: $contentPadding;
+  padding: $contentPadding 0;
 
   &#overlay {
     position: fixed;
@@ -45,14 +45,8 @@
 
         @include media {
           transform: scale(1.1);
-
-          /*  &:last-child {
-            display: none;
-          } */
-
           width: 85%;
           min-width: 80%;
-
           transform: translate(3.125%, 0) scale(1.1);
         }
       }
@@ -65,37 +59,6 @@
         a {
           margin-left: 1em;
         }
-      }
-    }
-
-  }
-
-  &.affiliates {
-    flex-wrap: wrap;
-
-    &:first-child {
-
-      //margin-top: 5vh;
-      img {
-        margin-top: 18 * $smallMargin;
-
-        @include media {
-          margin-top: 8 * $smallMargin;
-        }
-      }
-    }
-
-    img {
-      filter: opacity(0.3);
-      object-fit: scale-down;
-      object-position: left;
-      width: 25.3%;
-      margin-top: 8 * $smallMargin;
-
-      @include media {
-        margin-top: 0 * $smallMargin;
-        width: 16%;
-        object-position: center;
       }
     }
   }
@@ -143,7 +106,7 @@
   }
 
   &#connect {
-    padding-top: 0 * $paddingHeight;
+    padding-top: 6 * $paddingHeight;
 
     >div {
       align-self: flex-start;
