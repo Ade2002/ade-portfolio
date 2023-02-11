@@ -64,13 +64,13 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
         <Link href='/services'>
           <a>Services</a>
         </Link>
-        <Link href='/'>
+        <Link href='/projects'>
           <a>Projects</a>
         </Link>
-        <Link href='/'>
+        <Link href='/testimonials'>
           <a>Testimonials</a>
         </Link>
-        <Link href='/'>
+        <Link href='/connect'>
           <a>Connect</a>
         </Link>
         <LinkButtons
