@@ -77,6 +77,7 @@
   box-shadow: 5px 10px 18px #eeeeee00;
   transition: all 0.5s ease;
   @include flex(row, space-between, center);
+  background: black;
 
   .linkButton {
     margin: 0 !important;

@@ -29,7 +29,7 @@ const Header = ({ LinkButtonClasses, LinkButtonContents, LinkButtonTo }) => {
         headerBg.style.backgroundColor = bgHeaderWhite
       }
     }
-    const resetHeader = () => setNav(close)
+    const resetHeader = () => setNav(true)
     window.addEventListener('click', resetHeader)
     return () => window.removeEventListener('click', resetHeader)
   })
