@@ -6,4 +6,5 @@ const useForm = () => {
     email: "",
     projectDetails: "",
   });
+  const [errors, setErrors] = useState({});
 };
