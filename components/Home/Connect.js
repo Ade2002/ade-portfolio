@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import LandingPageStyles from "../../styles/partial/home.module.scss";
-import LinkButtons from "../button/linkButton";
-import HeaderStyles from "../../styles/partial/header.module.scss";
 import { motion } from "framer-motion";
 import FooterStyles from "../../styles/partial/footer.module.scss";
 import Fieldset from "./Form/fieldset";
