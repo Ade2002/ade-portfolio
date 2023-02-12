@@ -3,9 +3,9 @@ import LandingPageStyles from "../../styles/partial/home.module.scss";
 import { motion } from "framer-motion";
 import FooterStyles from "../../styles/partial/footer.module.scss";
 import Fieldset from "./Form/fieldset";
-import { useForm } from "../validation/useForm";
+import  useForm  from "../validation/useForm";
 const Connect = () => {
-  const { handleChange, values } = useForm;
+  const { handleChange, values } = useForm();
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section} `}
