@@ -3,7 +3,9 @@ import LandingPageStyles from "../../styles/partial/home.module.scss";
 import { motion } from "framer-motion";
 import FooterStyles from "../../styles/partial/footer.module.scss";
 import Fieldset from "./Form/fieldset";
+import { useForm } from "../validation/useForm";
 const Connect = () => {
+  const { handleChange, values } = useForm;
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section} `}
@@ -175,7 +177,7 @@ const Connect = () => {
         transition={{ duration: 3 }}
         className={`wow animate__animated animate__slideInUp`}
       >
-        <p className='none_m'>Lets create something amazing together. </p>
+        <p className="none_m">Lets create something amazing together. </p>
         <span>
           <Fieldset
             labelContent="Your Name"
@@ -184,8 +186,8 @@ const Connect = () => {
             inputName="full_name"
             inputPlaceholder="Enter your Full name"
             inputId="full_name"
-            /* value={values.full_name} */
-            /* onchange={handleChange} */
+            value={values.full_name}
+            onchange={handleChange}
           />
           {/* errors.full_name && */ <i>{/* errors. */ "Full name*"}</i>}
         </span>
@@ -197,8 +199,8 @@ const Connect = () => {
             inputName="email"
             inputPlaceholder="Enter your Email Address"
             inputId="email"
-            /* value={values.email} */
-            /* onchange={handleChange} */
+            value={values.email}
+            onchange={handleChange}
           />
           {/* errors.email && */ <i>{/* errors. */ "Email*"}</i>}
         </span>
@@ -210,10 +212,14 @@ const Connect = () => {
             inputName="projectDetails"
             inputPlaceholder="Details..."
             inputId="projectDetails"
-            /* value={values.projectDetails} */
-            /* onchange={handleChange} */
+            value={values.projectDetails}
+            onchange={handleChange}
           />
-          {/* errors.projectDetails && */ <i>{/* errors. */ "Project Details*"}</i>}
+          {
+            /* errors.projectDetails && */ <i>
+              {/* errors. */ "Project Details*"}
+            </i>
+          }
         </span>
         <button type="submit">Connect</button>
       </motion.form>
