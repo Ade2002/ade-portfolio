@@ -5,7 +5,7 @@ import FooterStyles from "../../styles/partial/footer.module.scss";
 import Fieldset from "./Form/fieldset";
 import  useForm  from "../validation/useForm";
 const Connect = () => {
-  const { handleChange, values } = useForm();
+  const { handleChange, values, handleSubmit } = useForm();
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section} `}
@@ -176,6 +176,7 @@ const Connect = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 3 }}
         className={`wow animate__animated animate__slideInUp`}
+        onSubmit={handleSubmit}
       >
         <p className="none_m">Lets create something amazing together. </p>
         <span>

@@ -18,7 +18,7 @@ const useForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  return { handleChange, values };
+  return { handleChange, values, handleSubmit };
 };
 
 export default useForm;
