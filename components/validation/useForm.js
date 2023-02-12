@@ -7,4 +7,12 @@ const useForm = () => {
     projectDetails: "",
   });
   const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      name: value,
+    });
+  };
 };
