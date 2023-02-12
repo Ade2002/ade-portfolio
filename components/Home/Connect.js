@@ -190,7 +190,7 @@ const Connect = () => {
             value={values.full_name}
             onchange={handleChange}
           />
-          {/* errors.full_name && */ <i>{/* errors. */ "Full name*"}</i>}
+          {/* errors.full_name && */ <i>{/* errors. */ ""}</i>}
         </span>
         <span>
           <Fieldset
