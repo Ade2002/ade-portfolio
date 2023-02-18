@@ -16,7 +16,6 @@ const [isSubmitting, setIsSubmitting] = useState(false)
     });
   };
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
