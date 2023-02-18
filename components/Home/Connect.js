@@ -3,9 +3,10 @@ import LandingPageStyles from "../../styles/partial/home.module.scss";
 import { motion } from "framer-motion";
 import FooterStyles from "../../styles/partial/footer.module.scss";
 import Fieldset from "./Form/fieldset";
-import  useForm  from "../validation/useForm";
+import useForm from "../validation/useForm";
+import validate from "../validation/validate";
 const Connect = () => {
-  const { handleChange, values, handleSubmit } = useForm();
+  const { handleChange, values, handleSubmit, errors } = useForm(validate);
   return (
     <section
       className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.section} `}
@@ -190,7 +191,7 @@ const Connect = () => {
             value={values.full_name}
             onchange={handleChange}
           />
-          {/* errors.full_name && */ <i>{/* errors. */ ""}</i>}
+          {errors.full_name && <i>{errors.full_name}</i>}
         </span>
         <span>
           <Fieldset
@@ -203,7 +204,7 @@ const Connect = () => {
             value={values.email}
             onchange={handleChange}
           />
-          {/* errors.email && */ <i>{/* errors. */ "Email*"}</i>}
+          {errors.email && <i>{errors.email}</i>}
         </span>
         <span>
           <Fieldset
@@ -216,11 +217,7 @@ const Connect = () => {
             value={values.projectDetails}
             onchange={handleChange}
           />
-          {
-            /* errors.projectDetails && */ <i>
-              {/* errors. */ "Project Details*"}
-            </i>
-          }
+          {errors.projectDetails && <i>{errors.projectDetails}</i>}
         </span>
         <button type="submit">Connect</button>
       </motion.form>
