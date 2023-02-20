@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <div className={`${Qhsestyles.choose}`}>
       <section className={`${Qhsestyles.contain}`}>
-       {/*  <div className={`${Qhsestyles.whyContentArea} ${Qhsestyles.m0}`}>
+        <div className={`${Qhsestyles.whyContentArea} ${Qhsestyles.m0}`}>
           <div className={`${Qhsestyles.titleArea} ${Qhsestyles.m0}`}>
             <h3 className={`${Qhsestyles.m0}`}>
               <span>What people are</span> <span>saying about us</span>
@@ -78,7 +78,7 @@ const Testimonials = () => {
               ></div>
             </Swiper>
           </div>
-        </div> */}
+        </div>
 
         
       </section>
