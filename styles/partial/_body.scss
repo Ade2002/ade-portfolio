@@ -220,20 +220,22 @@
 
   &#testimonials {
     justify-content: space-between;
-background-color: #292929;
+    background-color: #292929;
+
     .testi {
       justify-content: space-between;
 
       span {
         @include media {
           width: 38%;
-          h2{
+
+          h2 {
             font-size: 3vw;
           }
         }
 
         &:nth-child(2) {
-          justify-self: flex-end;
+          justify-content: flex-end;
         }
       }
     }
