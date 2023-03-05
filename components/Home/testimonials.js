@@ -72,9 +72,7 @@ const Testimonials = () => {
       <div
         className={`${LandingPageStyles.slidersCon} ${LandingPageStyles.flex_r}`}
       >
-        <span
-          className={`${LandingPageStyles.card} ${LandingPageStyles.flex_c}`}
-        >
+        <span className={`${LandingPageStyles.card}`}>
           <svg
             width="45"
             height="46"
@@ -105,11 +103,11 @@ const Testimonials = () => {
             a popular status symbol among macho men. She borrowed the book from
             him.{" "}
           </article>
-          <span>
+          <span className={`${LandingPageStyles.flex_r}`}>
             <i>
               <img src="./me.jpg" alt="lklg" />
             </i>
-            <span>
+            <span className={`${LandingPageStyles.flex_c}`}>
               <strong>Saliu Adio</strong>
               <small>CEO ATChub</small>
             </span>
@@ -146,11 +144,11 @@ const Testimonials = () => {
             a popular status symbol among macho men. She borrowed the book from
             him.{" "}
           </article>
-          <span>
+          <span className={`${LandingPageStyles.flex_r}`}>
             <i>
               <img src="./adeCheers.jpg" alt="lklg" />
             </i>
-            <span>
+            <span className={`${LandingPageStyles.flex_c}`}>
               <strong>Saliu Adio</strong>
               <small>CEO ATChub</small>
             </span>
@@ -187,11 +185,11 @@ const Testimonials = () => {
             a popular status symbol among macho men. She borrowed the book from
             him.{" "}
           </article>
-          <span>
+          <span className={`${LandingPageStyles.flex_r}`}>
             <i>
               <img src="./adefoldarms.jpg" alt="lklg" />
             </i>
-            <span>
+            <span className={`${LandingPageStyles.flex_c}`}>
               <strong>Saliu Adio</strong>
               <small>CEO ATChub</small>
             </span>
