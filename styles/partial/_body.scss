@@ -236,7 +236,25 @@
 
         &:nth-child(2) {
           justify-content: flex-end;
+
+          svg {
+            &:nth-child(2) {
+              margin-left: 1em;
+            }
+          }
         }
+      }
+    }
+
+    .slidersCon {
+      .card {
+        background: #F2F2F2;
+        border-radius: 10px;
+        width: 150px;
+      }
+
+      img {
+        width: 100%;
       }
     }
   }

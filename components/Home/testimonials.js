@@ -70,9 +70,11 @@ const Testimonials = () => {
         </span>
       </div>
       <div
-        className={`${LandingPageStyles.m0} ${LandingPageStyles.slidersCon}`}
+        className={`${LandingPageStyles.slidersCon} ${LandingPageStyles.flex_r}`}
       >
-        <span className={`${LandingPageStyles.card}`}>
+        <span
+          className={`${LandingPageStyles.card} ${LandingPageStyles.flex_c}`}
+        >
           <svg
             width="45"
             height="46"
