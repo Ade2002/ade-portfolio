@@ -247,10 +247,13 @@
     }
 
     .slidersCon {
+      width: 100%;
+      justify-content: space-between;
+
       .card {
         background: #F2F2F2;
         border-radius: 10px;
-        width: 150px;
+        width: 250px;
       }
 
       img {
