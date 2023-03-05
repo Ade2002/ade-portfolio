@@ -14,9 +14,13 @@ const Testimonials = () => {
       className={`${LandingPageStyles.section} ${LandingPageStyles.flex_c}`}
       id={`${LandingPageStyles.testimonials}`}
     >
-      <div className={`${LandingPageStyles.flex_cr}`}>
+      <div
+        className={`${LandingPageStyles.flex_cr} ${LandingPageStyles.testi}`}
+      >
         <span>
-          <h3 className={`cOrange`}>Testimonials</h3>
+          <h3>
+            <b className={`cOrange`}>Testimonials</b>
+          </h3>
           <h2>What my clients say</h2>
           <p>
             The ants enjoyed the barbecue more than the family. Everyone was
@@ -24,14 +28,13 @@ const Testimonials = () => {
             head-hunters, so I will never{" "}
           </p>
         </span>
-        <span>
+        <span className={`${LandingPageStyles.flex_r}`}>
           <svg
-            width="50"
+            width="35"
             height="50"
             viewBox="0 0 50 50"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`${LandingPageStyles.activeArrow}`}
           >
             <circle cx="25" cy="25" r="24" stroke="#FB4B04" stroke-width="2" />
             <path
@@ -42,8 +45,9 @@ const Testimonials = () => {
             />
           </svg>
           <svg
-            width="50"
+            width="35"
             height="50"
+            className={`${LandingPageStyles.activeArrow}`}
             viewBox="0 0 50 50"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
