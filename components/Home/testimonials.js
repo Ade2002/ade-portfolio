@@ -10,8 +10,11 @@ const Testimonials = () => {
   const swiperLeftNextRef = useRef(null);
 
   return (
-    <section className={`${LandingPageStyles.section} ${LandingPageStyles.flex_c}`} id={`${LandingPageStyles.testimonials}`}>
-      <div>
+    <section
+      className={`${LandingPageStyles.section} ${LandingPageStyles.flex_c}`}
+      id={`${LandingPageStyles.testimonials}`}
+    >
+      <div className={`${LandingPageStyles.flex_cr}`}>
         <span>
           <h3 className={`cOrange`}>Testimonials</h3>
           <h2>What my clients say</h2>
