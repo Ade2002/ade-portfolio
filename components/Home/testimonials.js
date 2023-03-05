@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-import LandingPageStyles from '../../styles/partial/home.module.scss'
+import LandingPageStyles from "../../styles/partial/home.module.scss";
 import { sliderData } from "./Layouts/data/dataSwiper";
 
 const Testimonials = () => {
@@ -10,10 +10,10 @@ const Testimonials = () => {
   const swiperLeftNextRef = useRef(null);
 
   return (
-    <section className={`${LandingPageStyles.section}`}>
+    <section className={`${LandingPageStyles.section} ${LandingPageStyles.flex_c}`} id={`${LandingPageStyles.testimonials}`}>
       <div>
         <span>
-          <h3>Testimonials</h3>
+          <h3 className={`cOrange`}>Testimonials</h3>
           <h2>What my clients say</h2>
           <p>
             The ants enjoyed the barbecue more than the family. Everyone was
@@ -62,7 +62,9 @@ const Testimonials = () => {
           </svg>
         </span>
       </div>
-      <div className={`${LandingPageStyles.m0} ${LandingPageStyles.slidersCon}`}>
+      <div
+        className={`${LandingPageStyles.m0} ${LandingPageStyles.slidersCon}`}
+      >
         <span className={`${LandingPageStyles.card}`}>
           <svg
             width="45"
