@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-import Qhsestyles from "../../styles/qhse/styles.module.scss";
+import LandingPageStyles from '../../styles/partial/home.module.scss'
 import { sliderData } from "./Layouts/data/dataSwiper";
 
 const Testimonials = () => {
@@ -10,7 +10,7 @@ const Testimonials = () => {
   const swiperLeftNextRef = useRef(null);
 
   return (
-    <section className={`${Qhsestyles.section}`}>
+    <section className={`${LandingPageStyles.section}`}>
       <div>
         <span>
           <h3>Testimonials</h3>
@@ -28,7 +28,7 @@ const Testimonials = () => {
             viewBox="0 0 50 50"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`${Qhsestyles.activeArrow}`}
+            className={`${LandingPageStyles.activeArrow}`}
           >
             <circle cx="25" cy="25" r="24" stroke="#FB4B04" stroke-width="2" />
             <path
@@ -62,8 +62,8 @@ const Testimonials = () => {
           </svg>
         </span>
       </div>
-      <div className={`${Qhsestyles.m0} ${Qhsestyles.slidersCon}`}>
-        <span className={`${Qhsestyles.card}`}>
+      <div className={`${LandingPageStyles.m0} ${LandingPageStyles.slidersCon}`}>
+        <span className={`${LandingPageStyles.card}`}>
           <svg
             width="45"
             height="46"
@@ -104,7 +104,7 @@ const Testimonials = () => {
             </span>
           </span>
         </span>
-        <span className={`${Qhsestyles.card}`}>
+        <span className={`${LandingPageStyles.card}`}>
           <svg
             width="45"
             height="46"
@@ -145,7 +145,7 @@ const Testimonials = () => {
             </span>
           </span>
         </span>
-        <span className={`${Qhsestyles.card}`}>
+        <span className={`${LandingPageStyles.card}`}>
           <svg
             width="45"
             height="46"

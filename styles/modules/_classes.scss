@@ -2,6 +2,20 @@
   color: $black !important;
 }
 
+.activeArrow {
+  fill: none;
+
+  circle {
+    fill: #FB4B04;
+    stroke: none;
+    stroke-width: 0;
+  }
+
+  path {
+    fill: white;
+  }
+}
+
 .cOrange {
   color: $myOrange;
 }
@@ -312,6 +326,7 @@
 
 .bar {
   display: flex;
+
   @include media($laptop) {
     display: none;
   }
