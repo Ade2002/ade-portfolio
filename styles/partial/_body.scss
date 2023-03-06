@@ -222,6 +222,11 @@
     justify-content: space-between;
     background-color: #292929;
 
+    padding: {
+      top: 12vh;
+      bottom:10vh ;
+    }
+
     .testi {
       justify-content: space-between;
 
@@ -253,7 +258,7 @@
       .card {
         background: #F2F2F2;
         border-radius: 10px;
-        max-width: 350px;
+        max-width: 300px;
         padding: 1.5em;
 
         article {
