@@ -255,11 +255,12 @@
         border-radius: 10px;
         max-width: 350px;
         padding: 1.5em;
-        
+
         article {
           color: black;
           margin-bottom: 1em;
         }
+
         span {
           justify-content: flex-start;
 
@@ -278,10 +279,14 @@
           }
 
           span {
-            strong{
+            strong {
               color: black;
             }
-            small{color: black;}
+
+            small {
+              color: black;
+            }
+
             color: black;
             margin-left: 0.5em;
           }

@@ -23,9 +23,10 @@ const Testimonials = () => {
           </h3>
           <h2>What my clients say</h2>
           <p>
-            The ants enjoyed the barbecue more than the family. Everyone was
-            busy, so I went to the movie alone. come from a tribe of
-            head-hunters, so I will never{" "}
+            I am very passionate about what I do, with this passion and honesty
+            I have been able to deliver and help people in need of my services,
+            So far my skill has helped me achieved this. Here is what my clients
+            are saying.
           </p>
         </span>
         <span className={`${LandingPageStyles.flex_r}`}>
