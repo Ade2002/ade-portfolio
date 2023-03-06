@@ -1,14 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import LandingPageStyles from "../../styles/partial/home.module.scss";
 import { sliderData } from "./Layouts/data/dataSwiper";
+import FetchAll from "../../api";
 
 const Testimonials = () => {
   const swiperLeftPrevRef = useRef(null);
   const swiperLeftNextRef = useRef(null);
-
+  const { getTestimonials, fetchTestimonials } = FetchAll();
+  useEffect(() => {
+    getTestimonials;
+  }, []);
   return (
     <section
       className={`${LandingPageStyles.section} ${LandingPageStyles.flex_c}`}

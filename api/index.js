@@ -3,13 +3,13 @@ import { Request } from "../util";
 export const baseUrl = "https://apiacadon.atc.com.ng/";
 
 const FetchAll = () => {
-  const [fetchCourses, setFetchCourses] = useState([]);
-  const getCourses = Request("GET", `${baseUrl}courses`).then(
+  const [fetchTestimonials, setFetchTestimonials] = useState([]);
+  const getTestimonials = Request("GET", `${baseUrl}courses`).then(
     (responseData) => {
-      setFetchCourses(responseData.courses);
+      setFetchTestimonials(responseData.courses);
     },
   );
 
-  return { getCourses, fetchCourses };
+  return { getTestimonials, fetchTestimonials };
 };
 export default FetchAll;
