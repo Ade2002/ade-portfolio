@@ -27,7 +27,8 @@ const Testimonials = () => {
           </h3>
           <h2>What my clients say</h2>
           <p>
-            I am very passionate about what I do, with this passion and honesty
+            I am very passionate about 
+            what I do, with this passion and honesty
             I have been able to deliver and help people in need of my services,
             So far my skill has helped me achieved this. Here is what my clients
             are saying.
